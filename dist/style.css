@@ -1,0 +1,41 @@
+body {
+    background-color: cadetblue;
+    font-family: 'Times New Roman', Times, serif;
+ }
+ 
+ #input-movie {
+     width: 1300px;
+     font-size: 20px;
+     font-family: 'Times New Roman', Times, serif;
+ }
+ 
+ #btnSearch {
+     width: 180px;
+     font-size: 20px;
+     font-family: 'Times New Roman', Times, serif;
+ }
+ 
+ img{
+     box-shadow: 1px 1px 3px black;
+     width: 300px;
+ }
+ 
+ .movies {
+     background-color: darkcyan;
+     text-align: center;
+     align-content: center;
+     padding: 5;
+     border: 2px solid;
+     margin: 20px;
+ }
+ 
+ .movies-container{
+     display: grid;
+     grid-gap: 15px;
+     grid-template-columns: repeat(3, 1fr);
+     height: 200px;
+ }
+ 
+ ul{
+     text-align: left;  
+ }

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<head>
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <script src="/jquery/dist/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.4/handlebars.js"></script>
+</head>
+
+<body>
+    <script id="movie-template" type="text/x-handlebars-template">
+    {{#each currentMovie}}
+    <div class="movies">
+     <h2 id = "title"><a href={{href}}>{{Title}}</a></h2> 
+      <img src={{Poster}} alt="" onclick="clickImg(this)" />
+      <p><span>Year: </span>{{Year}}</p>
+      <ul id ="rating"></ul>
+    </div> 
+   {{/each}} 
+  </script>
+
+    <input id="input-movie" type="text" placeholder="Enter your movie name" />
+    <button id="btnSearch" onclick="feachMovie()">Search</button>
+
+    <div class="movies-container"></div>
+</body>
+<script src="renderer.js"></script>
+<script src="main.js"></script>
